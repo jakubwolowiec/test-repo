@@ -1,11 +1,23 @@
-<app-inqoo-button [size]="'large'" [color]="'warning'">
-  Click me 01!
-</app-inqoo-button>
+<div style="margin: 30px">
 
-<app-inqoo-button [size]="'small'" [color]="'secondary'">
-  Click me 02!
-</app-inqoo-button>
+  <div style="margin: 5px; display: flex">
+    <app-inqoo-button [size]="'large'" [color]="'secondary'">
+      Click me 01!
+    </app-inqoo-button>
+    <app-inqoo-badge></app-inqoo-badge>
+  </div>
 
-<app-inqoo-button [size]="'default'">
-  Click me 03!
-</app-inqoo-button>
+  <div style="margin: 5px; display: flex">
+    <app-inqoo-button [size]="'small'" [color]="'warning'">
+      Click me 02!
+    </app-inqoo-button>
+    <app-inqoo-badge></app-inqoo-badge>
+  </div>
+
+  <div style="margin: 5px; display: flex">
+    <app-inqoo-button (buttonCustomClick)="onButtonCustomClick($event)">
+      Click me 03!
+    </app-inqoo-button>
+    <app-inqoo-badge></app-inqoo-badge>
+  </div>
+</div>

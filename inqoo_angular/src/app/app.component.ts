@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {InqooButtonClickEvent} from "./shared/models/inqoo-button-click-event";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'inqoo_angular';
+
+
+  onButtonCustomClick = (event: InqooButtonClickEvent) => console.log('onButtonCustomClick', event);
 }
