@@ -6,7 +6,7 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./inqoo-button.component.scss']
 })
 export class InqooButtonComponent implements OnInit {
-  @Input() color: 'primary' | 'secondary' | 'danger' | 'warning' | 'default' = 'primary';
+  @Input() color: 'primary' | 'secondary' | 'success' | 'danger' | 'warning' = 'primary';
   @Input() size: 'small' | 'large' | 'default' = "default";
 
   ngOnInit() {
