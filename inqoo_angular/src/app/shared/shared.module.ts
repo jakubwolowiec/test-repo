@@ -6,10 +6,13 @@ import { InqooButtonComponent } from './components/inqoo-button/inqoo-button.com
 
 @NgModule({
   declarations: [
-    InqooButtonComponent
+    InqooButtonComponent,
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    InqooButtonComponent
   ]
 })
 export class SharedModule { }

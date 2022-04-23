@@ -6,8 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Inqoo Angular';
-  getTitle () {
-    return this.title;
-  }
+  title = 'inqoo_angular';
 }

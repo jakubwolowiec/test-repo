@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-inqoo-button',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InqooButtonComponent implements OnInit {
 
-  constructor() { }
+  @Input() size: 'small' | 'large' | 'default' = "default";
 
-  ngOnInit(): void {
+  ngOnInit() {
+      console.log(this.size)
   }
 
+  isSmall = () => this.size === 'small';
+  isLarge = () => this.size === 'large';
 }

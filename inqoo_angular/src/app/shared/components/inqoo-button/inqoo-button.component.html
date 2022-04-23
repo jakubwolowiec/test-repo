@@ -1,1 +1,3 @@
-<p>inqoo-button works!</p>
+<button class="btn btn-outline-primary" [ngClass]="{'btn-lg': isLarge(), 'btn-sm': isSmall()}">
+  <ng-content></ng-content>
+</button>
