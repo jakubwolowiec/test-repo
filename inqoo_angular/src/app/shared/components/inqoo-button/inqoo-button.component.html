@@ -1,8 +1,7 @@
 <button
   class="btn btn-outline-{{ color }}"
   [ngClass]="{'btn-lg': isLarge(), 'btn-sm': isSmall()}"
-  (click)="onClick()"
-  
+  (click)="click()"
 >
   <ng-content></ng-content>
 </button>

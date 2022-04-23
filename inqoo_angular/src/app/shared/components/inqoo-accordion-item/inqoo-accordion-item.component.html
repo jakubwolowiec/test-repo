@@ -1,0 +1,12 @@
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button" type="button" [ngClass]="{'collapsed': !expanded}"  (click)="onClick()">
+      {{ label }}
+    </button>
+  </h2>
+  <div *ngIf="expanded" class="accordion-collapse">
+    <div class="accordion-body">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>
