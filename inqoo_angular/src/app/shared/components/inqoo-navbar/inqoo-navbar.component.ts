@@ -7,9 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class InqooNavbarComponent implements OnInit {
 
-  @Input() routes: {label: string, }[] =[];
+  @Input() routes: {label: string, content: string}[] =[];
   constructor() { }
-
+  
   ngOnInit(): void {
   }
 

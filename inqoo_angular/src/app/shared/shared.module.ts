@@ -5,6 +5,7 @@ import { InqooBadgeComponent } from './components/inqoo-badge/inqoo-badge.compon
 import { InqooAccordionItemComponent } from './components/inqoo-accordion-item/inqoo-accordion-item.component';
 import { InqooAccordionComponent } from './components/inqoo-accordion/inqoo-accordion.component';
 import { InqooNavbarComponent } from './components/inqoo-navbar/inqoo-navbar.component';
+import { InqooClockComponent } from './components/inqoo-clock/inqoo-clock.component';
 
 
 
@@ -15,6 +16,7 @@ import { InqooNavbarComponent } from './components/inqoo-navbar/inqoo-navbar.com
     InqooAccordionItemComponent,
     InqooAccordionComponent,
     InqooNavbarComponent,
+    InqooClockComponent
   ],
   imports: [
     CommonModule
@@ -24,7 +26,8 @@ import { InqooNavbarComponent } from './components/inqoo-navbar/inqoo-navbar.com
     InqooBadgeComponent,
     InqooAccordionItemComponent,
     InqooAccordionComponent,
-    InqooNavbarComponent
+    InqooNavbarComponent,
+    InqooClockComponent
   ]
 })
 export class SharedModule { }
