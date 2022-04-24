@@ -1,4 +1,5 @@
-import {ChangeDetectionStrategy, Component, EventEmitter, Input, Output} from '@angular/core';
+import { Component, EventEmitter, Input, Output} from '@angular/core';
+import { ExampleService } from 'src/app/services/example.service';
 import {InqooButtonClickEvent} from "../../models/inqoo-button-click-event";
 
 @Component({
@@ -17,4 +18,9 @@ export class InqooButtonComponent {
 
   isSmall = () => this.size === 'small';
   isLarge = () => this.size === 'large';
+
+  constructor(private service: ExampleService){
+    service.testMe();
+    service.setFavouriteColor('red');
+    service.testMe();}
 }

@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import { ExampleService } from 'src/app/services/example.service';
 
 @Component({
   selector: 'app-inqoo-navbar',
@@ -9,7 +10,8 @@ export class InqooNavbarComponent implements OnInit {
 
   @Input() routes: { label: string, route: string }[] = [];
 
-  constructor() { }
+  constructor(){}
+  
 
   ngOnInit(): void {
   }
