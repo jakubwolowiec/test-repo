@@ -4,9 +4,10 @@ import { InqooButtonComponent } from './components/inqoo-button/inqoo-button.com
 import { InqooBadgeComponent } from './components/inqoo-badge/inqoo-badge.component';
 import { InqooAccordionItemComponent } from './components/inqoo-accordion-item/inqoo-accordion-item.component';
 import { InqooAccordionComponent } from './components/inqoo-accordion/inqoo-accordion.component';
-import { InqooNavbarComponent } from './components/inqoo-navbar/inqoo-navbar.component';
 import { InqooClockComponent } from './components/inqoo-clock/inqoo-clock.component';
-import { RouterModule } from '@angular/router';
+import { InqooNavbarComponent } from './components/inqoo-navbar/inqoo-navbar.component';
+import { ComponentsShowroomPageComponent } from './pages/components-showroom-page/components-showroom-page.component';
+import {RouterModule} from "@angular/router";
 
 
 
@@ -16,9 +17,9 @@ import { RouterModule } from '@angular/router';
     InqooBadgeComponent,
     InqooAccordionItemComponent,
     InqooAccordionComponent,
-    InqooNavbarComponent,
     InqooClockComponent,
-    
+    InqooNavbarComponent,
+    ComponentsShowroomPageComponent,
   ],
   imports: [
     CommonModule,
@@ -29,9 +30,8 @@ import { RouterModule } from '@angular/router';
     InqooBadgeComponent,
     InqooAccordionItemComponent,
     InqooAccordionComponent,
-    InqooNavbarComponent,
     InqooClockComponent,
-    RouterModule
+    InqooNavbarComponent
   ]
 })
 export class SharedModule { }

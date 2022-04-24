@@ -9,5 +9,12 @@ import {InqooAccordionItem} from "../../models/inqoo-accordion-item";
 export class InqooAccordionComponent {
 
   @Input() items: InqooAccordionItem[] = [];
+  @Input() alwaysOpen: boolean = false;
 
+  onItemExpand = (expanded: boolean, index: number) => {
+    if(!this.alwaysOpen){
+      this.items = this.items.map((item, i) =>
+        ({...item, expanded: i === index ? item.expanded = expanded : false}))
+    }
+  }
 }

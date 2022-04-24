@@ -1,0 +1,12 @@
+.inqoo-container{
+  padding: 2vh;
+
+  &--row{
+    display: flex;
+    padding: 0.5vh;
+  }
+
+  &--row-divider{
+    color: #86b7fe;
+  }
+}

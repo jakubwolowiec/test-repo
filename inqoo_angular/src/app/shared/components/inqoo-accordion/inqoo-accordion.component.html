@@ -1,3 +1,7 @@
-<app-inqoo-accordion-item *ngFor="let item of items" [label]="item.label">
+<app-inqoo-accordion-item
+  *ngFor="let item of items, index as i"
+  [label]="item.label"
+  [expanded]="item.expanded"
+  (onExpandClick)="onItemExpand($event, i)">
   {{ item.content }}
 </app-inqoo-accordion-item>

@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+.inqoo-page{
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+
+  &--header{
+    color: #fd7e14;
+  }
+}

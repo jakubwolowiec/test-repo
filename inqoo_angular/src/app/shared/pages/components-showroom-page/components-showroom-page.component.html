@@ -1,0 +1,61 @@
+<div class="inqoo-container">
+  <div class="inqoo-container--row">
+    <app-inqoo-button (onClick)="toggleClock()">Toggle clock</app-inqoo-button>
+  </div>
+
+  <hr class="inqoo-container--row-divider">
+
+  <div class="inqoo-container--row">
+    <app-inqoo-clock *ngIf="showClock"></app-inqoo-clock>
+  </div>
+
+  <hr class="inqoo-container--row-divider">
+
+  <div class="inqoo-container--row">
+    <app-inqoo-accordion [items]="accordionItems01" [alwaysOpen]="false"></app-inqoo-accordion>
+  </div>
+
+  <hr class="inqoo-container--row-divider">
+
+  <div class="inqoo-container--row">
+    <app-inqoo-accordion [items]="accordionItems02" [alwaysOpen]="true"></app-inqoo-accordion>
+  </div>
+
+  <hr class="inqoo-container--row-divider">
+
+  <div class="inqoo-container--row">
+    <app-inqoo-button [size]="'large'" [color]="'secondary'" (onClick)="onLargeSecButtonCounter()">
+      Click me 01!
+    </app-inqoo-button>
+    <app-inqoo-badge [counter]="largeSecButtonCounter" [size]="1" [color]="'warning'"></app-inqoo-badge>
+  </div>
+
+  <hr class="inqoo-container--row-divider">
+
+  <div class="inqoo-container--row">
+    <app-inqoo-button [size]="'small'" [color]="'warning'" (onClick)="onSmallWarningButtonCounter()">
+      Click me 02!
+    </app-inqoo-button>
+    <app-inqoo-badge [counter]="smallWarningButtonCounter" [size]="6" [color]="'success'"></app-inqoo-badge>
+  </div>
+
+  <hr class="inqoo-container--row-divider">
+
+  <div class="inqoo-container--row">
+    <app-inqoo-button (onClick)="onDefaultButtonCustomClick($event)">
+      Click me 03!
+    </app-inqoo-button>
+    <app-inqoo-badge [counter]="defaultButtonCounter"></app-inqoo-badge>
+  </div>
+
+  <hr class="inqoo-container--row-divider">
+
+  <div class="inqoo-container--row">
+    <app-inqoo-accordion-item [label]="'Acc lable 01'">
+      Acc Content <strong> 01 ... </strong>
+    </app-inqoo-accordion-item>
+  </div>
+
+  <hr class="inqoo-container--row-divider">
+
+</div>
