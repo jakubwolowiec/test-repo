@@ -19,8 +19,5 @@ export class InqooButtonComponent {
   isSmall = () => this.size === 'small';
   isLarge = () => this.size === 'large';
 
-  constructor(private service: ExampleService){
-    service.testMe();
-    service.setFavouriteColor('red');
-    service.testMe();}
+ 
 }
