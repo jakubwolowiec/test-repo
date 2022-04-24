@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SwPeoplePageComponent } from './sw-people-page.component';
+import { InqooErrorpageComponent } from './inqoo-errorpage.component';
 
-describe('SwPeoplePageComponent', () => {
-  let component: SwPeoplePageComponent;
-  let fixture: ComponentFixture<SwPeoplePageComponent>;
+describe('InqooErrorpageComponent', () => {
+  let component: InqooErrorpageComponent;
+  let fixture: ComponentFixture<InqooErrorpageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SwPeoplePageComponent ]
+      declarations: [ InqooErrorpageComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SwPeoplePageComponent);
+    fixture = TestBed.createComponent(InqooErrorpageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

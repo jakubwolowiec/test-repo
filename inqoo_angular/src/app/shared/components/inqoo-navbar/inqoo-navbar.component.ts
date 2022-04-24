@@ -1,5 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
-
+import { Component, Input, OnInit} from '@angular/core';
 @Component({
   selector: 'app-inqoo-navbar',
   templateUrl: './inqoo-navbar.component.html',
@@ -7,17 +6,23 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class InqooNavbarComponent implements OnInit {
 
-  @Input() routes: {label: string, root: string}[] =[
-{label: "Starships",
-root: ""
+  @Input() routes: {label: string, route: string}[] =[
+{
+  label: "Homepage",
+route:"/home"
+  
 },
 
 {label: "People",
-root:""
+route:"/sw-people/"
 },
 
+{
+  label: "Starships",
+route: "/sw-starships/"
+},
 {label: "Components",
-root:""
+route: '**'
 }
 
   ];

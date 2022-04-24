@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {InqooButtonClickEvent} from "./shared/models/inqoo-button-click-event";
 import {InqooAccordionItem} from "./shared/models/inqoo-accordion-item";
+import { Routes } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,22 @@ import {InqooAccordionItem} from "./shared/models/inqoo-accordion-item";
 export class AppComponent {
   title = 'inqoo_angular';
 
+  routes: { label: string, route: string }[] = [
+    {
+      label: 'Homepage',
+      route: '/home'
+      
+    }, {
+      label: 'People',
+      route: '/sw-people/'
+    }, {
+      label: 'Starships',
+      route: '/sw-starships/'
+    },
+  {label: 'Component',
+route: '**'
+}
+  ];
   accordionItems: InqooAccordionItem[] = [
     {label: 'Label 01', content: 'Content 01'},
     {label: 'Label 02', content: 'Content 02'},

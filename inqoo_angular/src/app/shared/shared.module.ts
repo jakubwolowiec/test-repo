@@ -6,6 +6,7 @@ import { InqooAccordionItemComponent } from './components/inqoo-accordion-item/i
 import { InqooAccordionComponent } from './components/inqoo-accordion/inqoo-accordion.component';
 import { InqooNavbarComponent } from './components/inqoo-navbar/inqoo-navbar.component';
 import { InqooClockComponent } from './components/inqoo-clock/inqoo-clock.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -16,10 +17,12 @@ import { InqooClockComponent } from './components/inqoo-clock/inqoo-clock.compon
     InqooAccordionItemComponent,
     InqooAccordionComponent,
     InqooNavbarComponent,
-    InqooClockComponent
+    InqooClockComponent,
+    
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     InqooButtonComponent,
@@ -27,7 +30,8 @@ import { InqooClockComponent } from './components/inqoo-clock/inqoo-clock.compon
     InqooAccordionItemComponent,
     InqooAccordionComponent,
     InqooNavbarComponent,
-    InqooClockComponent
+    InqooClockComponent,
+    RouterModule
   ]
 })
 export class SharedModule { }
