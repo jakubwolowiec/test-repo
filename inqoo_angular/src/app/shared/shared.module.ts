@@ -9,6 +9,8 @@ import { InqooNavbarComponent } from './components/inqoo-navbar/inqoo-navbar.com
 import { ComponentsShowroomPageComponent } from './pages/components-showroom-page/components-showroom-page.component';
 import {RouterModule} from "@angular/router";
 import { PageNotFoundModule } from '../page-not-found/page-not-found.module';
+import { InqooDeckComponent } from '../inqoo-deck/pages/inqoo-deck/inqoo-deck.component';
+import { InqooDeckModule } from '../inqoo-deck/inqoo-deck.module';
 
 
 
@@ -26,7 +28,8 @@ import { PageNotFoundModule } from '../page-not-found/page-not-found.module';
   imports: [
     CommonModule,
     RouterModule,
-    PageNotFoundModule
+    PageNotFoundModule,
+    InqooDeckModule,
   ],
   exports: [
     InqooButtonComponent,
@@ -35,7 +38,8 @@ import { PageNotFoundModule } from '../page-not-found/page-not-found.module';
     InqooAccordionComponent,
     InqooClockComponent,
     InqooNavbarComponent,
-    PageNotFoundModule
+    PageNotFoundModule,
+    InqooDeckModule,
   ]
 })
 export class SharedModule { }

@@ -7,12 +7,14 @@ import {HomePageComponent} from "./home/pages/home-page/home-page.component";
 import {
   ComponentsShowroomPageComponent
 } from "./shared/pages/components-showroom-page/components-showroom-page.component";
+import { InqooDeckComponent } from './inqoo-deck/pages/inqoo-deck/inqoo-deck.component';
 
 export const enum RoutesConfig{
   home= 'home',
   swStarships = 'sw-starships',
   swPeople = 'sw-people',
-  components = 'components'
+  components = 'components',
+  deck = 'deck'
 }
 
 const routes: Routes = [
@@ -20,8 +22,10 @@ const routes: Routes = [
   {path: RoutesConfig.swStarships, component: SwStarshipsPageComponent},
   {path: RoutesConfig.swPeople, component: SwPeoplePageComponent},
   {path: RoutesConfig.components, component: ComponentsShowroomPageComponent},
+  {path: RoutesConfig.deck, component: InqooDeckComponent},
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: '**', component: NotFoundPageComponent},
+  
 ];
 
 @NgModule({
