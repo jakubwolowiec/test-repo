@@ -14,6 +14,7 @@ import { InqooDeckModule } from '../inqoo-deck/inqoo-deck.module';
 import { InqooCardComponent } from './components/inqoo-card/inqoo-card.component';
 import { InqooDateComponent } from './components/inqoo-date/inqoo-date.component';
 import { InqooUpAndLowPipe } from './pipes/inqoo-up-and-low.pipe';
+import { InqooPipeClockComponent } from './components/inqoo-pipe-clock/inqoo-pipe-clock.component';
 
 
 
@@ -29,6 +30,7 @@ import { InqooUpAndLowPipe } from './pipes/inqoo-up-and-low.pipe';
     InqooCardComponent,
     InqooDateComponent,
     InqooUpAndLowPipe,
+    InqooPipeClockComponent,
     
   ],
   imports: [
