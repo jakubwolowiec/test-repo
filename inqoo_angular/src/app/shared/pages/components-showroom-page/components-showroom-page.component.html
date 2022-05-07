@@ -1,6 +1,12 @@
 <div class="inqoo-container">
-  
+
+  <hr class="inqoo-container--row-divider">
+
+  {{'lorem ipsum' | inqooUpAndLow}}
+
+  <hr class="inqoo-container--row-divider">
   <app-inqoo-date [dateFormat]="'short'"></app-inqoo-date>
+  <hr class="inqoo-container--row-divider">
   <div class="inqoo-container--row">
     <app-inqoo-button (onClick)="toggleClock()">Toggle clock</app-inqoo-button>
   </div>
@@ -22,6 +28,7 @@
   <div class="inqoo-container--row">
     <app-inqoo-accordion [items]="accordionItems02" [alwaysOpen]="true"></app-inqoo-accordion>
   </div>
+   
 
   <hr class="inqoo-container--row-divider">
 

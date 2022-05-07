@@ -13,6 +13,7 @@ import { InqooDeckComponent } from '../inqoo-deck/pages/inqoo-deck/inqoo-deck.co
 import { InqooDeckModule } from '../inqoo-deck/inqoo-deck.module';
 import { InqooCardComponent } from './components/inqoo-card/inqoo-card.component';
 import { InqooDateComponent } from './components/inqoo-date/inqoo-date.component';
+import { InqooUpAndLowPipe } from './pipes/inqoo-up-and-low.pipe';
 
 
 
@@ -27,6 +28,7 @@ import { InqooDateComponent } from './components/inqoo-date/inqoo-date.component
     ComponentsShowroomPageComponent,
     InqooCardComponent,
     InqooDateComponent,
+    InqooUpAndLowPipe,
     
   ],
   imports: [
