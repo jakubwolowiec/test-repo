@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { map } from 'rxjs';
+import { Person } from 'src/app/api/models/person-interface';
+import { Starship } from 'src/app/api/models/starship-interface';
 import {SwapiService} from "../../../api/services/swapi.service";
 
 @Component({
@@ -7,18 +10,12 @@ import {SwapiService} from "../../../api/services/swapi.service";
   styleUrls: ['./sw-starships-page.component.scss']
 })
 export class SwStarshipsPageComponent implements OnInit {
-
+starships: Starship[] | undefined;
   constructor(private swapi: SwapiService) { }
 
   ngOnInit(): void {
-    this.swapi.getStarships().subscribe(result => console.log(result))
-    this.swapi.getPeople().subscribe(people => console.log(people))
-
-    this.swapi.getPeople(2).subscribe(people => console.log(people))
-    this.swapi.getPeople(3).subscribe(people => console.log(people))
-
-    this.swapi.getPerson(67).subscribe(person => console.log(person));
-    this.swapi.getSpecificStarship(9).subscribe(ship => console.log(ship));
+    this.swapi.getStarships().pipe(map(data => data.results as Starship[]))
+    .subscribe(result => this.starships = result);
   }
 
 }

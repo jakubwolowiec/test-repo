@@ -48,6 +48,7 @@ import { InqooPipeClockComponent } from './components/inqoo-pipe-clock/inqoo-pip
     InqooNavbarComponent,
     PageNotFoundModule,
     InqooDeckModule,
+    InqooCardComponent,
   ]
 })
 export class SharedModule { }

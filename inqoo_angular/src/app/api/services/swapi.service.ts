@@ -9,11 +9,13 @@ import { SwapiResponse } from '../models/swapi-response';
 })
 export class SwapiService {
 
+
+
   constructor(private http: HttpClient) { }
 
   getPeople = (page: number = 1) => this.http.get(`${environment.swapiBaseUrl}/people/?page=${page}`);
   getPerson = (id: number) => this.http.get(`${environment.swapiBaseUrl}/people/${id}`);
 
-  getStarships = (page: number = 1) => this.http.get(`${environment.swapiBaseUrl}/starships/?page=${page}`);
+  getStarships = (page: number = 1):Observable<SwapiResponse> => this.http.get<SwapiResponse>(`${environment.swapiBaseUrl}/starships/?page=${page}`);
   getSpecificStarship = (id: number) => this.http.get(`${environment.swapiBaseUrl}/starships/${id}`);
 }
