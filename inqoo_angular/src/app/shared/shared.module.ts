@@ -12,6 +12,7 @@ import { PageNotFoundModule } from '../page-not-found/page-not-found.module';
 import { InqooDeckComponent } from '../inqoo-deck/pages/inqoo-deck/inqoo-deck.component';
 import { InqooDeckModule } from '../inqoo-deck/inqoo-deck.module';
 import { InqooCardComponent } from './components/inqoo-card/inqoo-card.component';
+import { InqooDateComponent } from './components/inqoo-date/inqoo-date.component';
 
 
 
@@ -25,6 +26,7 @@ import { InqooCardComponent } from './components/inqoo-card/inqoo-card.component
     InqooNavbarComponent,
     ComponentsShowroomPageComponent,
     InqooCardComponent,
+    InqooDateComponent,
     
   ],
   imports: [
