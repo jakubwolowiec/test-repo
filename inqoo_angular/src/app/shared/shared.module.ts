@@ -12,6 +12,7 @@ import { InqooDateComponent } from './components/inqoo-date/inqoo-date.component
 import { InqooUpAndLowPipe } from './pipes/inqoo-up-and-low.pipe';
 import { InqooClockV2Component } from './components/inqoo-clock-v2/inqoo-clock-v2.component';
 import { InqooLoaderComponent } from './components/inqoo-loader/inqoo-loader.component';
+import { InqooSearchBarComponent } from './components/inqoo-search-bar/inqoo-search-bar.component';
 
 
 
@@ -28,6 +29,7 @@ import { InqooLoaderComponent } from './components/inqoo-loader/inqoo-loader.com
     InqooUpAndLowPipe,
     InqooClockV2Component,
     InqooLoaderComponent,
+    InqooSearchBarComponent,
   ],
   imports: [
     CommonModule,
@@ -40,7 +42,8 @@ import { InqooLoaderComponent } from './components/inqoo-loader/inqoo-loader.com
     InqooAccordionComponent,
     InqooClockComponent,
     InqooNavbarComponent,
-    InqooLoaderComponent
+    InqooLoaderComponent,
+    InqooSearchBarComponent
   ]
 })
 export class SharedModule { }
