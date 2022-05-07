@@ -8,13 +8,10 @@ import { InqooClockComponent } from './components/inqoo-clock/inqoo-clock.compon
 import { InqooNavbarComponent } from './components/inqoo-navbar/inqoo-navbar.component';
 import { ComponentsShowroomPageComponent } from './pages/components-showroom-page/components-showroom-page.component';
 import {RouterModule} from "@angular/router";
-import { PageNotFoundModule } from '../page-not-found/page-not-found.module';
-import { InqooDeckComponent } from '../inqoo-deck/pages/inqoo-deck/inqoo-deck.component';
-import { InqooDeckModule } from '../inqoo-deck/inqoo-deck.module';
-import { InqooCardComponent } from './components/inqoo-card/inqoo-card.component';
 import { InqooDateComponent } from './components/inqoo-date/inqoo-date.component';
 import { InqooUpAndLowPipe } from './pipes/inqoo-up-and-low.pipe';
-import { InqooPipeClockComponent } from './components/inqoo-pipe-clock/inqoo-pipe-clock.component';
+import { InqooClockV2Component } from './components/inqoo-clock-v2/inqoo-clock-v2.component';
+import { InqooLoaderComponent } from './components/inqoo-loader/inqoo-loader.component';
 
 
 
@@ -27,17 +24,14 @@ import { InqooPipeClockComponent } from './components/inqoo-pipe-clock/inqoo-pip
     InqooClockComponent,
     InqooNavbarComponent,
     ComponentsShowroomPageComponent,
-    InqooCardComponent,
     InqooDateComponent,
     InqooUpAndLowPipe,
-    InqooPipeClockComponent,
-    
+    InqooClockV2Component,
+    InqooLoaderComponent,
   ],
   imports: [
     CommonModule,
-    RouterModule,
-    PageNotFoundModule,
-    InqooDeckModule,
+    RouterModule
   ],
   exports: [
     InqooButtonComponent,
@@ -46,9 +40,7 @@ import { InqooPipeClockComponent } from './components/inqoo-pipe-clock/inqoo-pip
     InqooAccordionComponent,
     InqooClockComponent,
     InqooNavbarComponent,
-    PageNotFoundModule,
-    InqooDeckModule,
-    InqooCardComponent,
+    InqooLoaderComponent
   ]
 })
 export class SharedModule { }

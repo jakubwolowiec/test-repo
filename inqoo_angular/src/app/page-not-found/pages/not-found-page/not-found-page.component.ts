@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { interval, Subscription } from 'rxjs';
-import { RoutesConfig } from 'src/app/app-routing.module';
-
+import {Router} from "@angular/router";
+import {RoutesConfig} from "../../../app-routing.module";
+import {interval, Subscription} from "rxjs";
 
 @Component({
   selector: 'app-not-found-page',
@@ -10,21 +9,24 @@ import { RoutesConfig } from 'src/app/app-routing.module';
   styleUrls: ['./not-found-page.component.scss']
 })
 export class NotFoundPageComponent implements OnInit {
-counter: number = 5;
 
-  constructor(private router: Router) { }
+  timeLeft: number = 5;
+
   private timeSubscription: Subscription | undefined;
 
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
-    
-    this.timeSubscription = interval(1000).subscribe(() =>
-     {this.counter--; if(this.counter == 0){this.router.navigate([RoutesConfig.home]);
-    this.timeSubscription?.unsubscribe();}})
-     
-    }
-  
-  ngOnDestroy():void{
+    this.timeSubscription = interval(1000).subscribe(() => {
+      this.timeLeft -=1;
+      if(this.timeLeft < 0){
+        this.router.navigate([RoutesConfig.home])
+      }
+    });
+  }
+
+  ngOnDestroy() {
     this.timeSubscription?.unsubscribe();
   }
+
 }

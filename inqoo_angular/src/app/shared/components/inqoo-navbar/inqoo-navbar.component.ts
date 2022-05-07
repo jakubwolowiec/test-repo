@@ -1,6 +1,4 @@
 import {Component, Input, OnInit} from '@angular/core';
-import { Router } from '@angular/router';
-import { RoutesConfig } from 'src/app/app-routing.module';
 
 @Component({
   selector: 'app-inqoo-navbar',
@@ -11,11 +9,9 @@ export class InqooNavbarComponent implements OnInit {
 
   @Input() routes: { label: string, route: string }[] = [];
 
-  constructor(){}
-  
+  constructor() { }
 
   ngOnInit(): void {
-  
   }
 
 }

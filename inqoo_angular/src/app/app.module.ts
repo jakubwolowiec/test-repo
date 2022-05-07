@@ -5,8 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from "./shared/shared.module";
 import {HttpClientModule} from "@angular/common/http";
-import { SwStarshipsModule } from './sw-starships/sw-starships.module';
-import { SwPeopleModule } from './sw-people/sw-people.module';
+import {SwStarshipsModule} from "./sw-starships/sw-starships.module";
+import {SwPeopleModule} from "./sw-people/sw-people.module";
 
 @NgModule({
   declarations: [

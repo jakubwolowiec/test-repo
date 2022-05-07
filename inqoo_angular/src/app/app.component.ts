@@ -1,5 +1,4 @@
 import {Component} from '@angular/core';
-import { Router } from '@angular/router';
 import {RoutesConfig} from "./app-routing.module";
 
 @Component({
@@ -23,11 +22,6 @@ export class AppComponent {
     }, {
       label: 'Components',
       route: RoutesConfig.components
-    },{
-      label: 'Deck',
-      route: RoutesConfig.deck
-    }
-  
-  ];
+    }];
 }
 
