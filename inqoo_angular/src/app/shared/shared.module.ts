@@ -11,6 +11,7 @@ import {RouterModule} from "@angular/router";
 import { PageNotFoundModule } from '../page-not-found/page-not-found.module';
 import { InqooDeckComponent } from '../inqoo-deck/pages/inqoo-deck/inqoo-deck.component';
 import { InqooDeckModule } from '../inqoo-deck/inqoo-deck.module';
+import { InqooCardComponent } from './components/inqoo-card/inqoo-card.component';
 
 
 
@@ -23,6 +24,7 @@ import { InqooDeckModule } from '../inqoo-deck/inqoo-deck.module';
     InqooClockComponent,
     InqooNavbarComponent,
     ComponentsShowroomPageComponent,
+    InqooCardComponent,
     
   ],
   imports: [
