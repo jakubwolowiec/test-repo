@@ -1,5 +1,5 @@
 export interface ToDoItem{
-    index: number,
-    label: string,
-    isDone: boolean
+  id: number,
+  label: string,
+  isDone: boolean
 }

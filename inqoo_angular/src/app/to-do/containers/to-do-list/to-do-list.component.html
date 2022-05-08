@@ -1,5 +1,7 @@
-<div>
-    <pre *ngFor="let item of list">
-        {{item | json}}
-    </pre>
+<div class="to-do-list-container">
+  <app-to-do-list-item *ngFor="let item of list" [item]="item" (onDoneClick)="onItemDone($event)"></app-to-do-list-item>
+</div>
+
+<div class="to-do-list-container">
+  <app-to-do-list-item-creator (onItemCreate)="addToDoItem($event)"></app-to-do-list-item-creator>
 </div>
