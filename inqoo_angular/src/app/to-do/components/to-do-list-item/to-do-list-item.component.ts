@@ -10,7 +10,9 @@ export class ToDoListItemComponent {
 
   @Input() item: ToDoItem | undefined;
   @Output() onDoneClick = new EventEmitter<number>();
+  @Output() onDeleteClick = new EventEmitter<number>();
 
   doneClick = () => this.onDoneClick.emit(this.item?.id);
+  deleteClick = () => this.onDeleteClick.emit(this.item?.id);
 
 }
