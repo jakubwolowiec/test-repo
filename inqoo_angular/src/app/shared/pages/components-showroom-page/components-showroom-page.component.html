@@ -1,9 +1,12 @@
 <div class="inqoo-container">
   <div class="inqoo-container--row">
-    {{ 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum' | inqooUpAndLow }}
+    {{
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+        | inqooUpAndLow
+    }}
   </div>
 
-  <hr class="inqoo-container--row-divider">
+  <hr class="inqoo-container--row-divider" />
 
   <div class="inqoo-container--row">
     <app-inqoo-date></app-inqoo-date>
@@ -13,55 +16,77 @@
     <app-inqoo-date [dateFormat]="'shortDate'"></app-inqoo-date>
   </div>
 
-  <hr class="inqoo-container--row-divider">
+  <hr class="inqoo-container--row-divider" />
 
   <div class="inqoo-container--row">
     <app-inqoo-button (onClick)="toggleClock()">Toggle clock</app-inqoo-button>
   </div>
 
-  <hr class="inqoo-container--row-divider">
+  <hr class="inqoo-container--row-divider" />
 
   <div class="inqoo-container--row">
     <app-inqoo-clock-v2></app-inqoo-clock-v2>
   </div>
 
-  <hr class="inqoo-container--row-divider">
+  <hr class="inqoo-container--row-divider" />
 
   <div class="inqoo-container--row">
     <app-inqoo-clock *ngIf="showClock"></app-inqoo-clock>
   </div>
 
-  <hr class="inqoo-container--row-divider">
+  <hr class="inqoo-container--row-divider" />
 
   <div class="inqoo-container--row">
-    <app-inqoo-accordion [items]="accordionItems01" [alwaysOpen]="false"></app-inqoo-accordion>
+    <app-inqoo-accordion
+      [items]="accordionItems01"
+      [alwaysOpen]="false"
+    ></app-inqoo-accordion>
   </div>
 
-  <hr class="inqoo-container--row-divider">
+  <hr class="inqoo-container--row-divider" />
 
   <div class="inqoo-container--row">
-    <app-inqoo-accordion [items]="accordionItems02" [alwaysOpen]="true"></app-inqoo-accordion>
+    <app-inqoo-accordion
+      [items]="accordionItems02"
+      [alwaysOpen]="true"
+    ></app-inqoo-accordion>
   </div>
 
-  <hr class="inqoo-container--row-divider">
+  <hr class="inqoo-container--row-divider" />
 
   <div class="inqoo-container--row">
-    <app-inqoo-button [size]="'large'" [color]="'secondary'" (onClick)="onLargeSecButtonCounter()">
+    <app-inqoo-button
+      [size]="'large'"
+      [color]="'secondary'"
+      (onClick)="onLargeSecButtonCounter()"
+    >
       Click me 01!
     </app-inqoo-button>
-    <app-inqoo-badge [counter]="largeSecButtonCounter" [size]="1" [color]="'warning'"></app-inqoo-badge>
+    <app-inqoo-badge
+      [counter]="largeSecButtonCounter"
+      [size]="1"
+      [color]="'warning'"
+    ></app-inqoo-badge>
   </div>
 
-  <hr class="inqoo-container--row-divider">
+  <hr class="inqoo-container--row-divider" />
 
   <div class="inqoo-container--row">
-    <app-inqoo-button [size]="'small'" [color]="'warning'" (onClick)="onSmallWarningButtonCounter()">
+    <app-inqoo-button
+      [size]="'small'"
+      [color]="'warning'"
+      (onClick)="onSmallWarningButtonCounter()"
+    >
       Click me 02!
     </app-inqoo-button>
-    <app-inqoo-badge [counter]="smallWarningButtonCounter" [size]="6" [color]="'success'"></app-inqoo-badge>
+    <app-inqoo-badge
+      [counter]="smallWarningButtonCounter"
+      [size]="6"
+      [color]="'success'"
+    ></app-inqoo-badge>
   </div>
 
-  <hr class="inqoo-container--row-divider">
+  <hr class="inqoo-container--row-divider" />
 
   <div class="inqoo-container--row">
     <app-inqoo-button (onClick)="onDefaultButtonCustomClick($event)">
@@ -70,7 +95,7 @@
     <app-inqoo-badge [counter]="defaultButtonCounter"></app-inqoo-badge>
   </div>
 
-  <hr class="inqoo-container--row-divider">
+  <hr class="inqoo-container--row-divider" />
 
   <div class="inqoo-container--row">
     <app-inqoo-accordion-item [label]="'Acc lable 01'">
@@ -78,6 +103,5 @@
     </app-inqoo-accordion-item>
   </div>
 
-  <hr class="inqoo-container--row-divider">
-
+  <hr class="inqoo-container--row-divider" />
 </div>

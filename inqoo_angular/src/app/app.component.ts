@@ -22,6 +22,11 @@ export class AppComponent {
     }, {
       label: 'Components',
       route: RoutesConfig.components
-    }];
+    },
+    {
+      label: 'To-do List',
+      route: RoutesConfig.toDoList
+    }
+  ];
 }
 

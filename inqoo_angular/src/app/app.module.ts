@@ -7,6 +7,7 @@ import { SharedModule } from "./shared/shared.module";
 import {HttpClientModule} from "@angular/common/http";
 import {SwStarshipsModule} from "./sw-starships/sw-starships.module";
 import {SwPeopleModule} from "./sw-people/sw-people.module";
+import { ToDoModule } from './to-do/to-do.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {SwPeopleModule} from "./sw-people/sw-people.module";
     SharedModule,
     HttpClientModule,
     SwStarshipsModule,
-    SwPeopleModule
+    SwPeopleModule,
+    ToDoModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
