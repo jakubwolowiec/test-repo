@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import {Starship} from "../../../api/models/starship";
 import {SwapiService} from "../../../api/services/swapi.service";
 import {delay, map} from "rxjs";
-import { NgForOf } from '@angular/common';
 
 @Component({
   selector: 'app-starships-list',
@@ -10,31 +9,29 @@ import { NgForOf } from '@angular/common';
   styleUrls: ['./starships-list.component.scss']
 })
 export class StarshipsListComponent implements OnInit {
-  starshipsBase: Starship[] = [];
+
   starships: Starship[] = [];
+  starshipsBase: Starship[] = [];
   isLoading: boolean = true;
 
   constructor(private swapi: SwapiService) { }
 
   ngOnInit(): void {
-
     this.swapi.getStarships().pipe(
       delay(1000),
       map(data => data.results as Starship[])
     ).subscribe(result => {
       this.starships = result;
-      this.starshipsBase = this.starships;
+      this.starshipsBase = result;
       this.isLoading = false;
     });
   }
 
-  onSearchChange = (searchTerm: string) => {
-    if(searchTerm != null){
-      searchTerm = searchTerm.toLowerCase();
-    
-    this.starships = this.starshipsBase.filter(ship => ship.name.includes(searchTerm))
-    }
-    else{this.starships = [...this.starshipsBase];}
-  }
-  }
 
+
+  onSearchChange = (searchTerm: string) =>
+    searchTerm === '' ?
+      this.starships = [...this.starshipsBase]
+      : this.starships = this.starshipsBase.filter(ship =>
+        ship.name.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase()));
+}

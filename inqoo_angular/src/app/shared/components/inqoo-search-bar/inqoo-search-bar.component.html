@@ -1,5 +1,1 @@
-
-<form class="form-floating">
-  <input class="form-control" id="search-bar" placeholder="Type something..." (change)="onUserTyping($event)">
-  <label for="search-bar">Search</label>
-</form>
+<input [formControl]="searchInput" class="form-control" id="search-bar" placeholder="Type something...">

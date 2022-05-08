@@ -13,6 +13,7 @@ import { InqooUpAndLowPipe } from './pipes/inqoo-up-and-low.pipe';
 import { InqooClockV2Component } from './components/inqoo-clock-v2/inqoo-clock-v2.component';
 import { InqooLoaderComponent } from './components/inqoo-loader/inqoo-loader.component';
 import { InqooSearchBarComponent } from './components/inqoo-search-bar/inqoo-search-bar.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 
@@ -33,7 +34,8 @@ import { InqooSearchBarComponent } from './components/inqoo-search-bar/inqoo-sea
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
   ],
   exports: [
     InqooButtonComponent,
