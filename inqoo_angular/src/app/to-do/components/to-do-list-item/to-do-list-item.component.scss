@@ -1,0 +1,27 @@
+.to-do-list-item{
+  display: flex;
+  justify-content: space-between;
+  border: double #fd7e14 3px;
+  border-radius: 10px;
+  max-width: 50vh;
+  padding: 2vh;
+  margin: 0.5vh;
+
+  &--label{
+    color: #6c757d;
+    font-size: x-large;
+  }
+
+  &--button{
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  &--done{
+    background-color: #ccffcc;
+  }
+
+  &--not-done{
+    background-color: #f0f0f5;
+  }
+}

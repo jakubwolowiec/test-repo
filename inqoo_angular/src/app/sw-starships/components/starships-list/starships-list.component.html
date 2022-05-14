@@ -1,0 +1,11 @@
+<app-inqoo-loader *ngIf="isLoading" [label]="'Loading starships'"></app-inqoo-loader>
+
+<div *ngIf="!isLoading">
+  <div class="starships-search">
+    <app-inqoo-search-bar (onValueChange)="onSearchChange($event)"></app-inqoo-search-bar>
+  </div>
+
+  <div class="starships-list">
+    <app-starship *ngFor="let ship of starships" [starship]="ship"></app-starship>
+  </div>
+</div>

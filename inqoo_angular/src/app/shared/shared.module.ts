@@ -8,7 +8,12 @@ import { InqooClockComponent } from './components/inqoo-clock/inqoo-clock.compon
 import { InqooNavbarComponent } from './components/inqoo-navbar/inqoo-navbar.component';
 import { ComponentsShowroomPageComponent } from './pages/components-showroom-page/components-showroom-page.component';
 import {RouterModule} from "@angular/router";
-import { PageNotFoundModule } from '../page-not-found/page-not-found.module';
+import { InqooDateComponent } from './components/inqoo-date/inqoo-date.component';
+import { InqooUpAndLowPipe } from './pipes/inqoo-up-and-low.pipe';
+import { InqooClockV2Component } from './components/inqoo-clock-v2/inqoo-clock-v2.component';
+import { InqooLoaderComponent } from './components/inqoo-loader/inqoo-loader.component';
+import { InqooSearchBarComponent } from './components/inqoo-search-bar/inqoo-search-bar.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 
@@ -21,12 +26,16 @@ import { PageNotFoundModule } from '../page-not-found/page-not-found.module';
     InqooClockComponent,
     InqooNavbarComponent,
     ComponentsShowroomPageComponent,
-    
+    InqooDateComponent,
+    InqooUpAndLowPipe,
+    InqooClockV2Component,
+    InqooLoaderComponent,
+    InqooSearchBarComponent,
   ],
   imports: [
     CommonModule,
     RouterModule,
-    PageNotFoundModule
+    ReactiveFormsModule
   ],
   exports: [
     InqooButtonComponent,
@@ -35,7 +44,8 @@ import { PageNotFoundModule } from '../page-not-found/page-not-found.module';
     InqooAccordionComponent,
     InqooClockComponent,
     InqooNavbarComponent,
-    PageNotFoundModule
+    InqooLoaderComponent,
+    InqooSearchBarComponent
   ]
 })
 export class SharedModule { }

@@ -1,0 +1,15 @@
+<div
+  class="to-do-list-item"
+  [ngClass]="{'to-do-list-item--done': item?.isDone, 'to-do-list-item--not-done': !item?.isDone }"
+>
+  <div class="to-do-list-item--label">
+    <strong>
+      {{item?.label}}
+    </strong>
+  </div>
+  <div class="to-do-list-item--buttons">
+    <button *ngIf="!item?.isDone" (click)="doneClick()" type="button" class="btn btn-outline-success to-do-list-item--button">Done</button>
+    <button *ngIf="item?.isDone" type="button" class="btn btn-outline-warning">Not Done</button>
+    <button type="button" (click)="deleteClick()" class="btn btn-outline-danger to-do-list-item--button">X</button>
+  </div>
+</div>

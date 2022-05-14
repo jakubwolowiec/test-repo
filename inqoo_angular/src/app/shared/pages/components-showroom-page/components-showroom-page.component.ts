@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {InqooAccordionItem} from "../../models/inqoo-accordion-item";
 import {InqooButtonClickEvent} from "../../models/inqoo-button-click-event";
-import { ExampleService } from 'src/app/services/example.service';
+
 @Component({
   selector: 'app-components-showroom-page',
   templateUrl: './components-showroom-page.component.html',
@@ -36,9 +36,5 @@ export class ComponentsShowroomPageComponent {
     console.log(event);
     this.defaultButtonCounter += 1;
   }
-  constructor(private service: ExampleService){
-    service.testMe();
-    service.setFavouriteColor('red');
-    service.testMe();}
 
 }

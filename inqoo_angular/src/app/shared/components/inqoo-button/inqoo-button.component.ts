@@ -1,5 +1,4 @@
-import { Component, EventEmitter, Input, Output} from '@angular/core';
-import { ExampleService } from 'src/app/services/example.service';
+import {ChangeDetectionStrategy, Component, EventEmitter, Input, Output} from '@angular/core';
 import {InqooButtonClickEvent} from "../../models/inqoo-button-click-event";
 
 @Component({
@@ -18,6 +17,4 @@ export class InqooButtonComponent {
 
   isSmall = () => this.size === 'small';
   isLarge = () => this.size === 'large';
-
- 
 }
