@@ -1,0 +1,17 @@
+<app-duel
+  [mode]="mode"
+  [playerOnePick]="playerOnePick$ | async"
+  [playerTwoPick]="playerTwoPick$ | async"
+  [isPlayerOnePickDisabled]="isPlayerOnePickDisabled$ | async"
+  [isPlayerTwoPickDisabled]="isPlayerTwoPickDisabled$ | async"
+  [isResetGameDisabled]="isResetGameDisabled$ | async"
+  [result]="result$ | async"
+  [duelNotPossible]="!(isGameReady$| async)"
+  [playerOneScore]="playerOneScore$ | async"
+  [playerTwoScore]="playerTwoScore$ | async"
+  (playerOneDraw)="playerOneDraw()"
+  (playerTwoDraw)="playerTwoDraw()"
+  (reset)="reset()"
+></app-duel>
+
+<app-duel-history [history]="history$ | async"></app-duel-history>
